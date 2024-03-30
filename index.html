@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <title>Özel Ana Sayfa</title>
+    <style>
+        body {
+            background-color: white;
+            text-align: center; /* Arama çubuğunu ortala */
+        }
+        .search-box {
+            margin: 60px auto; /* Arama çubuğunu ortala */
+            max-width: 600px; /* Arama çubuğunu büyüt */
+        }
+        .link-box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .link-box img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Arama Çubuğu -->
+    <div class="search-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" width="100">
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" name="q" id="q" placeholder="Google'da ara">
+            <input type="submit" value="Ara">
+        </form>
+    </div>
+
+    <!-- Resimli Linkler -->
+    <div class='link-box'>
+        <a href='https://www.facebook.com' target='_blank'>
+            <img src='facebook-resmi-url' alt='Facebook'>
+        </a>
+    </div>
+    <!-- Diğer 11 resimli linki aynı şekilde ekleyebilirsiniz -->
+
+</body>
+</html>
