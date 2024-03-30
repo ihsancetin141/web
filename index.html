@@ -2,16 +2,38 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Özel Ana Sayfa</title>
     <style>
         body {
-            background-color: white;
-            text-align: center; /* Arama çubuğunu ortala */
+            background-color: #222; /* Arka planı koyu gri yap */
+            color: #ddd; /* Metin rengini açık gri yap */
+            text-align: center; /* Arama çubuğunu ve linkleri ortala */
         }
         .search-box {
-            margin: 60px auto; /* Arama çubuğunu ortala */
-            max-width: 600px; /* Arama çubuğunu büyüt */
+            margin: 40px auto; /* Arama çubuğunu yatayda ortala ve yukarıdan 40px boşluk bırak */
+            max-width: 600px; /* Arama çubuğunu maksimum 600px genişlikte yap */
+        }
+        .search-box img {
+            width: 200px; /* Google logosunu büyüt */
+        }
+        .search-box input[type="text"] {
+            width: 80%; /* Arama kutusunu genişlet */
+            padding: 10px; /* Arama kutusunun içerisindeki boşluğu arttır */
+            font-size: 16px; /* Yazı boyutunu arttır */
+            background-color: #444; /* Arama kutusu arka planını koyu gri yap */
+            color: #ddd; /* Arama kutusu metin rengini açık gri yap */
+            border: none; /* Kenarlık oluşturma */
+            border-radius: 5px; /* Köşeleri yuvarla */
+        }
+        .search-box input[type="submit"] {
+            padding: 10px 20px; /* Arama butonunun boyutunu arttır */
+            font-size: 16px; /* Yazı boyutunu arttır */
+            background-color: #444; /* Arama butonu arka planını koyu gri yap */
+            color: #ddd; /* Arama butonu metin rengini açık gri yap */
+            border: none; /* Kenarlık oluşturma */
+            border-radius: 5px; /* Köşeleri yuvarla */
+            cursor: pointer; /* İmleci el işareti yap */
         }
         .link-box {
             width: 100px;
@@ -28,7 +50,7 @@
 <body>
     <!-- Google Arama Çubuğu -->
     <div class="search-box">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" alt="Google Logo" width="100">
+        <img src="https://ihsancetin.com.tr/resimler/google.png" alt="Google Logo">
         <form action="https://www.google.com/search" method="get">
             <input type="text" name="q" id="q" placeholder="Google'da ara">
             <input type="submit" value="Ara">
@@ -37,11 +59,62 @@
 
     <!-- Resimli Linkler -->
     <div class='link-box'>
-        <a href='https://www.facebook.com' target='_blank'>
-            <img src='facebook-resmi-url' alt='Facebook'>
+        <a href='https://www.yandex.com' target='_blank'>
+            <img src='https://ihsancetin.com.tr/resimler/resim1.png' alt='Yandex'>
         </a>
     </div>
-    <!-- Diğer 11 resimli linki aynı şekilde ekleyebilirsiniz -->
+    <!-- Diğer resimli linkleri aynı şekilde ekleyebilirsiniz -->
 
+    <div class='link-box'>
+        <a href='https://www.linkedin.com' target='_blank'>
+            <img src='https://ihsancetin.com.tr/resimler/Resim2.png' alt='Linkedin'>
+        </a>
+    </div>
+    <!-- Diğer resimli linkleri aynı şekilde ekleyebilirsiniz -->
+
+    <div class='link-box'>
+        <a href='https://www.youtube.com' target='_blank'>
+            <img src='https://ihsancetin.com.tr/resimler/Resim3.png' alt='YouTube'>
+        </a>
+    </div>
+    <!-- Diğer resimli linkleri aynı şekilde ekleyebilirsiniz -->
+
+    <div class='link-box'>
+        <a href='https://www.turkiye.gov.tr' target='_blank'>
+            <img src='https://ihsancetin.com.tr/resimler/Resim4.png' alt='Edevlet'>
+        </a>
+    </div>
+    <!-- Diğer resimli linkleri aynı şekilde ekleyebilirsiniz -->
+    <div class='link-box'>
+        <a href='https://www.eksisozluk.com' target='_blank'>
+            <img src='https://ihsancetin.com.tr/resimler/Resim5.png' alt='Ekşi Sözlük'>
+        </a>
+    </div>
+    <!-- Diğer resimli linkleri aynı şekilde ekleyebilirsiniz -->
+    <div class='link-box'>
+        <a href='https://mail.zoho.com/zm/#mail/folder/inbox' target='_blank'>
+            <img src='https://ihsancetin.com.tr/resimler/Resim6.png' alt='Mail'>
+        </a>
+    </div>
+    <!-- Diğer resimli linkleri aynı şekilde ekleyebilirsiniz -->
+    <div class='link-box'>
+        <a href='https://mail.google.com/mail/u/0/#inbox' target='_blank'>
+            <img src='https://ihsancetin.com.tr/resimler/Resim7.png' alt='Gmail'>
+        </a>
+    </div>
+    <!-- Diğer resimli linkleri aynı şekilde ekleyebilirsiniz -->
+    <div class='link-box'>
+        <a href='https://web.telegram.org' target='_blank'>
+            <img src='https://ihsancetin.com.tr/resimler/Resim8.png' alt='Telegram'>
+        </a>
+    </div>
+    <!-- Diğer resimli linkleri aynı şekilde ekleyebilirsiniz -->
+
+    <script>
+        // Sayfa yüklendiğinde arama kutusuna odaklan
+        window.onload = function() {
+            document.getElementById('q').focus();
+        };
+    </script>
 </body>
 </html>
